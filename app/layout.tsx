@@ -1,9 +1,15 @@
+/* eslint-disable camelcase */
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Saira_Condensed } from "next/font/google";
 import "./globals.css";
 import React from "react";
+import Navbar from "@/components/shared/navbar/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const sairaCondesed = Saira_Condensed({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-sairaCondensed",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${sairaCondesed.variable}`}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
