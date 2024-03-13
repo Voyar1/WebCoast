@@ -1,16 +1,16 @@
 import Link from "next/link";
 import React from "react";
 import Button from "../Button";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <nav className="flex-between container z-50 gap-5 p-6 sm:px-12">
+    <nav className="flex-between fixed left-0 top-0 z-50 w-full gap-5 bg-white p-6 sm:px-12">
       <Link href="/" className="flex items-center gap-1">
-        <p className="h1-bold font-sairaCondensed text-dark-100 max-sm:hidden">
-          WEB <span className="text-primary-500">COAST.</span>
-        </p>
+        <p className="h1-bold font-sairaCondensed text-dark-100 ">WEBCOAST.</p>
       </Link>
-      <div className="flex gap-4 font-[100]">
+
+      <div className="right-0 top-0 flex  items-end  gap-4  font-[100] max-lg:hidden">
         <Link href="/" className="flex items-center gap-1">
           Oferta
         </Link>
@@ -29,6 +29,13 @@ const Navbar = () => {
 
         <Button text="Napisz do nas" />
       </div>
+      <Image
+        src="/assets/icons/hamburger.svg"
+        width={32}
+        height={32}
+        alt="hamburger"
+        className="cursor-pointer invert lg:hidden"
+      />
     </nav>
   );
 };

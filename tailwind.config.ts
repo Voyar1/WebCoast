@@ -41,6 +41,7 @@ const config: Config = {
       },
       screens: {
         xs: "420px",
+        xxl: "1700px",
       },
       backgroundImage: {
         hero: "url('/assets/hero.jpg')",
