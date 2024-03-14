@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex-between fixed left-0 top-0 z-50 w-full items-center gap-5 bg-white p-6 shadow-lg sm:px-12">
+    <nav className="flex-between fixed left-0 top-0 z-50 w-full items-center gap-5 bg-white p-6  shadow-lg sm:px-12">
       <Link href="/" className="flex items-center gap-1">
         <p className="h1-bold font-sairaCondensed text-dark-100 ">WEBCOAST.</p>
       </Link>
