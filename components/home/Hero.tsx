@@ -2,7 +2,12 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="relative z-10 mt-12  flex h-[32rem] w-full  items-center bg-hero bg-cover  bg-center after:absolute after:bottom-[-2rem] after:left-0 after:z-0 after:h-20 after:w-full after:skew-y-[-1.5deg] after:bg-white  xxl:h-[46rem]">
+    <section
+      className="relative z-10 mt-12  flex h-[32rem] w-full  items-center bg-hero bg-cover  bg-center "
+      style={{
+        clipPath: "polygon(0 100%, 100% 90%, 100% 0, 0 0)",
+      }}
+    >
       <div className="container m-auto flex w-9/12 items-center justify-between max-lg:w-10/12 max-lg:p-1 2xl:max-w-[1000px] xxl:max-w-[1400px]">
         <div className="flex w-64 flex-col ">
           <h1 className="h1-bold text-5xl text-light-900  max-lg:text-5xl xxl:text-7xl">
