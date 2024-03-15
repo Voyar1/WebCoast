@@ -1,5 +1,6 @@
 import Contact from "@/components/home/Contact";
 import Hero from "@/components/home/Hero";
+import Process from "@/components/home/Process";
 import { getAllPostsWithSlug } from "@/lib/actions/post.action";
 
 export default async function Home() {
@@ -8,6 +9,7 @@ export default async function Home() {
   return (
     <main className="min-h-screen text-black">
       <Hero />
+      <Process />
       <Contact />
     </main>
   );
