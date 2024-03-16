@@ -94,4 +94,7 @@
   .primary-gradient {
     background: linear-gradient(129deg, #fe68de 0%, #b18cfd 100%);
   }
+  .secondary-gradient {
+    background: linear-gradient(129deg, #b18cfd 100%, #fe68de 0%);
+  }
 }

@@ -22,7 +22,7 @@ body {
   }
 
   .card-wrapper {
-    @apply bg-light-900 dark:dark-gradient shadow-light-100 dark:shadow-dark-100;
+    @apply dark:dark-gradient shadow-light-100 bg-light-900 dark:shadow-dark-100;
   }
 
   .btn {
@@ -39,6 +39,9 @@ body {
 
   .primary-gradient {
     background: linear-gradient(129deg, #fe68de 0%, #b18cfd 100%);
+  }
+  .secondary-gradient {
+    background: linear-gradient(129deg, #b18cfd 100%, #fe68de 0%);
   }
 }
 
