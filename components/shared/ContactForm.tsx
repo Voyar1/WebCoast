@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 
@@ -11,7 +11,6 @@ type Inputs = {
 };
 
 const ContactForm = () => {
-  const form = useRef();
   const {
     register,
     handleSubmit,
@@ -27,15 +26,6 @@ const ContactForm = () => {
 
   const onSubmit: SubmitHandler<Inputs> = async (data, e) => {
     e?.preventDefault();
-
-    const templateParams = {
-      firstName: data.firstName,
-      email: data.email,
-      phone: data.phone,
-      message: data.message,
-    };
-
-    const formData = JSON.stringify(templateParams);
 
     await emailjs
       .sendForm("service_cl58jle", "template_7hgnnhb", "#contact_form", {
