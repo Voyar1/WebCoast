@@ -42,7 +42,7 @@ const Process = () => {
           Twój projekt?
         </p>
         <div className="mt-[15px] flex justify-center">
-          <span className="cursor-pointer rounded-[15px] bg-[#111111] px-[50px] py-[10px] text-white">
+          <span className="cursor-pointer rounded-[15px] bg-[#111111] px-[50px] py-[10px] text-white transition duration-200 hover:bg-[#333333]">
             Skontaktuj się z nami!
           </span>
         </div>
