@@ -1,4 +1,4 @@
-import Contact from "@/components/home/Contact";
+import Contact from "@/components/home/Contact/Contact";
 import Hero from "@/components/home/Hero";
 import Process from "@/components/home/Process";
 import { getAllPostsWithSlug } from "@/lib/actions/post.action";
